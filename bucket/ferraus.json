@@ -1,0 +1,31 @@
+{
+  "version": "0.1.2",
+  "description": "A command-line audio workstation for scripts and AI agents",
+  "homepage": "https://github.com/djynnius/ferraus",
+  "license": "Apache-2.0 OR MIT",
+  "architecture": {
+    "64bit": {
+      "hash": "7d087f9f822698e8d2c0f5d721fbfcf84076701e9c1517ca8ce147489d19aca8",
+      "url": "https://github.com/djynnius/ferraus/releases/download/v0.1.2/ferraus-x86_64-pc-windows-msvc.zip"
+    },
+    "arm64": {
+      "hash": "503e32cecf93d692e09e528eb9e8761fac247d7be2c83751888733f03ef066b1",
+      "url": "https://github.com/djynnius/ferraus/releases/download/v0.1.2/ferraus-aarch64-pc-windows-msvc.zip"
+    }
+  },
+  "bin": "ferraus.exe",
+  "suggest": {
+    "Visual C++ Redistributable": "extras/vcredist2022"
+  },
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/djynnius/ferraus/releases/download/v$version/ferraus-x86_64-pc-windows-msvc.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/djynnius/ferraus/releases/download/v$version/ferraus-aarch64-pc-windows-msvc.zip"
+      }
+    }
+  }
+}
